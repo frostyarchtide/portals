@@ -1,9 +1,10 @@
+use std::f32::consts::FRAC_PI_2;
+
 use bevy::{
     input::mouse::AccumulatedMouseMotion,
     prelude::*,
     window::{CursorGrabMode, CursorOptions, PrimaryWindow},
 };
-use std::f32::consts::FRAC_PI_2;
 
 #[derive(Component, Clone, Copy, Deref, DerefMut)]
 pub struct CameraSensitivity(Vec2);
