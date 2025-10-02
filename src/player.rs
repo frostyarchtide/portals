@@ -30,6 +30,7 @@ impl Plugin for PlayerPlugin {
 
 fn lock_cursor(mut primary_cursor_options: Single<&mut CursorOptions, With<PrimaryWindow>>) {
     primary_cursor_options.grab_mode = CursorGrabMode::Locked;
+    primary_cursor_options.visible = false;
 }
 
 fn move_player(
