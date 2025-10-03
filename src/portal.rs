@@ -4,7 +4,12 @@ use bevy::{
 
 const SHADER_ASSET_PATH: &str = "shaders/portal.wgsl";
 
-#[derive(Component)]
+#[derive(Default, Component)]
+pub struct Portal {
+    pub target: Transform,
+}
+
+#[derive(Default, Component)]
 #[require(Camera3d)]
 pub struct PortalCamera;
 
